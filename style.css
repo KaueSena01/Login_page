@@ -1,0 +1,139 @@
+		*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+body{
+	background-color: #eee;
+}
+.content{
+	background-color: white;
+	position: absolute;	
+	left: 50%;
+	transform: translateY(-50%);
+	transform: translateX(-50%);
+	border-radius: 10px;
+}
+.content .form-control{
+	display: block;
+	background-color: transparent;
+	font-family: 'Roboto';
+	text-align: center;
+}
+.form-control #logo{
+	padding-top: 1px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    width: 20%;
+    height: 32px;
+    margin: 40px 40% 30px 40%;
+    border-radius: 5px;
+}
+input{
+	width: 75%;
+	height: 40px;
+	margin: 20px auto;
+	font-size: 16px;
+	font-family: 'Roboto';
+	font-weight: 400;
+	padding: 0px 0.25rem;
+	color: #363636;
+	border: 2px solid transparent;
+	border-bottom: 2px solid #444343;
+
+	transition: .1s all;
+}
+input:focus{
+	padding: 0 0.35rem;
+}
+.btn{
+	width: 75%;
+	height: 42px;
+	border-radius: 20px;
+	margin-top: 40px;
+	font-size: 16px;
+	font-family: 'Roboto';
+	font-weight: 500;
+	background: linear-gradient(120deg, #0075f6, #84006c);
+	color: white;
+	cursor: pointer;
+	border: none;
+
+	transition: .5s all;
+}
+.btn:hover{
+	opacity: 0.8;
+}
+hr{
+	width: 75%;
+	height: 2px;
+	margin: 30px 12.5% 0 12.5%;
+	background: linear-gradient(120deg, #0075f6, #84006c);
+}
+p{
+	color: #444343;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 12px;
+	font-family: 'Roboto';
+	font-weight: 400;
+}
+p a{
+	color: #0075f6;
+	text-decoration: none;
+}
+@media (max-width: 425px){
+.content{
+	top: 4%;
+	width: 90%;
+	height: 520px;
+}
+.content .form-control{
+	width: 100%;
+	height: 435px;
+}
+
+.form-control #welcome{
+	font-size: 30px;
+	padding-top: 24px;
+}
+.form-control #logo{
+	margin: 20px 40% 20px 40%;
+}
+input{
+	width: 80%;
+	height: 40px;
+	margin: 20px auto;
+	padding: 0px 0.1rem;
+	border: 2px solid white;
+	border-bottom: 2px solid #444343;
+}
+.btn{
+	width: 80%;
+}
+hr{
+	width: 80%;
+	height: 2px;
+	margin: 0px 10% 0 10%;
+}
+}
+@media (min-width: 500px) and (max-width: 2600px){
+.content{
+	top: 8%;
+	width: 400px;
+	height: 550px;
+	box-shadow: 9px 10px 25px #4b4b4b;
+}
+.content .form-control{
+	width: 100%;
+	height: 450px;
+}
+.form-control #welcome{
+	font-size: 30px;
+	padding-top: 24px;
+}
+
+}
